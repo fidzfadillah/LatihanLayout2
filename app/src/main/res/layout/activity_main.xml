@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atta Halilintar"
+            android:textSize="40dp"
+            android:gravity="center_horizontal"
+            android:padding="50dp"/>
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="20dp"
+            android:layout_below="@id/title"/>
+        <EditText
+            android:id="@+id/inputnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama"
+            android:text="Atta Halilintar"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textSize="20dp"
+            android:layout_below="@id/inputnama"/>
+        <EditText
+            android:id="@+id/inputalamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alamat"
+            android:text="Kliningan"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/kampus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kampus"
+            android:textSize="20dp"
+            android:layout_below="@id/inputalamat"/>
+        <EditText
+            android:id="@+id/inputkampus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kampus"
+            android:text="SMKN 4 Bandung"
+            android:textSize="25dp"/>
+
+        <LinearLayout
+            android:id="@+id/foto"
+            android:layout_below="@id/inputkampus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="15dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:layout_margin="10dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:layout_margin="10dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kembali"
+            android:layout_below="@id/foto"
+            android:paddingHorizontal="60dp"/>
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_below="@id/foto"
+            android:paddingHorizontal="60dp"/>
+    </RelativeLayout>
+
+</LinearLayout>
